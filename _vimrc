@@ -38,8 +38,8 @@ source $VIMRUNTIME/menu.vim
 "set guifont=Consolas:h12
 "set guifont=Courier_New:h12:cANSI
 "set guifont=YaHei\ Consolas\ Hybrid:h12
-set guifont=DejaVu\ Sans\ Mono:h11
-"set guifont=Microsoft\ YaHei\ Mono:h11
+"set guifont=DejaVu\ Sans\ Mono:h11
+set guifont=Microsoft\ YaHei\ Mono:h11
 
 "
 " 启动最大化, 设置颜色方案
