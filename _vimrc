@@ -251,3 +251,6 @@ let xml_syntax_folding=1      " XML
 
 " 切换搜索结果的高亮
 nnoremap <F3> :set hlsearch!<CR>
+
+" CtrlP Settings {{{
+" }}}
