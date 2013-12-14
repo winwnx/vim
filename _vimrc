@@ -143,7 +143,7 @@ set incsearch
 " let g:Powerline_symbols = 'fancy'
 " }
 
-" neocomplete setting {{
+" neocomplete setting {{{
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -234,6 +234,7 @@ hi Pmenu                    guibg=#606060
 hi PmenuSel                 guifg=#dddd00 guibg=#1f82cd
 hi PmenuSbar                guibg=#d6d6d6
 hi PmenuThumb               guifg=#3cac3c
+" }}} neocomplete setting end
 
 " folding setting {{{
 set foldmethod=syntax
@@ -253,4 +254,5 @@ let xml_syntax_folding=1      " XML
 nnoremap <F3> :set hlsearch!<CR>
 
 " CtrlP Settings {{{
+noremap <C-W><C-U> :CtrlPMRUFiles<CR>
 " }}}
