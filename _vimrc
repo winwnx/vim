@@ -39,8 +39,10 @@ source $VIMRUNTIME/menu.vim
 "set guifont=Courier_New:h12:cANSI
 "set guifont=YaHei\ Consolas\ Hybrid:h12
 "set guifont=DejaVu\ Sans\ Mono:h11
-set guifont=Microsoft\ YaHei\ Mono:h12
-"set guifontwide=Microsoft\ YaHei\ Mono:h11
+"set guifont=Microsoft\ YaHei\ Mono:h12
+"set guifont=Ubuntu\ Mono\ derivative\ Powerline:h13
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
+set guifontwide=Microsoft\ YaHei\ Mono:h12
 "
 " 启动最大化, 设置颜色方案
 "
@@ -255,4 +257,8 @@ nnoremap <F3> :set hlsearch!<CR>
 
 " CtrlP Settings {{{
 noremap <C-W><C-U> :CtrlPMRUFiles<CR>
+" }}}
+
+" ari-line settings {{{
+let g:airline_powerline_fonts = 1
 " }}}
