@@ -261,4 +261,12 @@ noremap <C-W><C-U> :CtrlPMRUFiles<CR>
 
 " ari-line settings {{{
 let g:airline_powerline_fonts = 1
+let g:airline_detect_modified = 0 "if you're sticking the + in section_c you probably want to disable detection
+function! Init()
+  call airline#parts#define_raw('modified', '%{&modified ? "+" : ""}')
+  call airline#parts#define_accent('modified', 'red')
+  let g:airline_section_c = airline#section#create(['%f', 'modified'])
+endfunction
+autocmd VimEnter * call Init()
 " }}}
+
