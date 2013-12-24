@@ -1,6 +1,17 @@
 "********************************************
-"  _vimrc/_gvimrc for cygwin or *nix
-"  BY andy wu
+"  _vimrc BY andy wu
+"
+"  说明：
+"  需要以下字体：
+"  Dejavu Vu Sans Mono Powerline
+"  Microsoft Yahei Mono
+"  这两个字体放在百度云盘上了
+"
+"  插件neocomplete需要lua支持，需要vim 7.3.x或7.4，并且编译时支持lua的版本
+"  在百度云盘上，我放了一个vim 7.4的压缩包。
+"
+"  百度云盘的链接: http://pan.baidu.com/s/1mgDelkO 密码: w6u5
+"
 "********************************************
 
 "
@@ -52,7 +63,9 @@ set guifontwide=Microsoft\ YaHei\ Mono:h12
 syntax enable
 "set background=light
 set background=dark
-colorscheme solarized
+"colorscheme solarized
+colorscheme zenburn
+" colorscheme Tomorrow-Night-Eighties
 
 "
 "自动缩进
@@ -261,12 +274,12 @@ noremap <C-W><C-U> :CtrlPMRUFiles<CR>
 
 " ari-line settings {{{
 let g:airline_powerline_fonts = 1
-let g:airline_detect_modified = 0 "if you're sticking the + in section_c you probably want to disable detection
-function! Init()
-  call airline#parts#define_raw('modified', '%{&modified ? "+" : ""}')
-  call airline#parts#define_accent('modified', 'red')
-  let g:airline_section_c = airline#section#create(['%f', 'modified'])
-endfunction
-autocmd VimEnter * call Init()
+" let g:airline_detect_modified = 0 "if you're sticking the + in section_c you probably want to disable detection
+" function! Init()
+"   call airline#parts#define_raw('modified', '%{&modified ? "+" : ""}')
+"   call airline#parts#define_accent('modified', 'red')
+"   let g:airline_section_c = airline#section#create(['%f', 'modified'])
+" endfunction
+" autocmd VimEnter * call Init()
 " }}}
 
