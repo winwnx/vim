@@ -283,3 +283,7 @@ let g:airline_powerline_fonts = 1
 " autocmd VimEnter * call Init()
 " }}}
 
+" 自定义的快捷键
+nnoremap <C-J> a<CR><Esc>k$
+nmap <S-Enter> O<Esc>j
+nmap <CR> o<Esc>k
